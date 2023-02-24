@@ -1,0 +1,110 @@
+/*========== buttons "Products" ==========*/
+.btn-products {
+  @include font(8px, 500, 10px);
+  padding: 5px 10px;
+  border: 2px solid var(--first-yellow);
+  border-radius: 8px;
+  background-color: transparent;
+
+  transition: border var(--transition-animation);
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--first-green);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-products {
+    @include font(14px, 600, 18px);
+    padding: 10px 31px;
+    border-radius: 10px;
+  }
+}
+/*========== /buttons "Products" ==========*/
+
+
+/*========== buttons "How it’s made?" ==========*/
+.btn-how {
+  @include font(8px, 600, 10px);
+  padding: 7px 7px;
+  background-color: transparent;
+  border: 0;
+  color: var(--first-yellow);
+
+  transition: color var(--transition-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--first-green);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-how {
+    @include font(14px, 600, 18px);
+    padding: 11px 21px;
+  }
+}
+/*========== /buttons "How it’s made?" ==========*/
+
+
+/*========== buttons "Read more, Our Locations, Buy now" ==========*/
+.modal-btn {
+  @include font(14px, 600, 18px);
+  padding: 12px 34px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--first-yellow);
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    margin-left: 13px;
+    background-image: url(../images/desc/arrow-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  transition: background-color var(--transition-animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--first-green);
+  }
+}
+/*========== /buttons "Read more, Our Locations, Buy now" ==========*/
+
+
+/*========== buttons "franchise" ==========*/
+.btn-franchise {
+  @include font(14px, 600, 18px);
+  color: var(--primary-text-color);
+  padding: 10px 50px;
+  border: 2px solid var(--first-yellow);
+  border-radius: 10px;
+  background-color: transparent;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    margin-left: 13px;
+    background-image: url(../images/desc/arrow-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  transition: border var(--transition-animation);
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--first-green);
+  }
+}
+/*========== /buttons "franchise" ==========*/

@@ -1,0 +1,219 @@
+<!-- Modal Window - Buy Now -->
+<div class="backdrop is-hidden" data-buy-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-buy-modal-close>
+      <svg class="modal__close-btn-icon" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__titel">Buy now</h3>
+    <ul class="buy-now-card list">
+      <li class="buy-now-card__item">
+        <div class="buy-now-card__box-foto buy-now-card__box-foto_green">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/products/ice-cream-mob.png    1x,
+                ./images/mobile/products/ice-cream-mob@2x.png 2x
+              "
+            />
+            <img
+              src="./images/mobile/products/ice-cream-mob.png"
+              alt="ice cream foto"
+              loading="lazy"
+              class="buy-now-card__foto"
+            />
+          </picture>
+        </div>
+        <div class="buy-now-card__box-titel buy-now-card__box-titel_green">
+          <p class="buy-now-card__titel">ice cream</p>
+        </div>
+      </li>
+      <li class="buy-now-card__item">
+        <div class="buy-now-card__box-foto buy-now-card__box-foto_yellow">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/products/coffee-mob.png    1x,
+                ./images/mobile/products/coffee-mob@2x.png 2x
+              "
+            />
+            <img
+              src="./images/mobile/products/coffee-mob.png"
+              alt="coffee foto"
+              loading="lazy"
+              class="buy-now-card__foto"
+            />
+          </picture>
+        </div>
+        <div class="buy-now-card__box-titel buy-now-card__box-titel_yellow">
+          <p class="buy-now-card__titel">ice coffee</p>
+        </div>
+      </li>
+      <li class="buy-now-card__item">
+        <div class="buy-now-card__box-foto buy-now-card__box-foto_brown">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/products/milkshake-mob.png    1x,
+                ./images/mobile/products/milkshake-mob@2x.png 2x
+              "
+            />
+            <img
+              src="./images/mobile/products/milkshake-mob.png"
+              alt="milkshake foto"
+              loading="lazy"
+              class="buy-now-card__foto"
+            />
+          </picture>
+        </div>
+        <div class="buy-now-card__box-titel buy-now-card__box-titel_brown">
+          <p class="buy-now-card__titel">milkshake</p>
+        </div>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <label class="modal-form__field">
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form__input"
+          required
+          pattern="[a-zA-Zа-яА-А]+"
+          minlength="2"
+          placeholder="Name"
+        />
+      </label>
+      <label class="modal-form__field">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-form__input"
+          required
+          pattern="[0-9]{3}-[0-9]{7}"
+          title="xxx-xxxxxxx"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="modal-form__field-desc">
+        <textarea
+          name="user_messag"
+          class="modal-form__message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-form__btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Window - Read More -->
+<div class="backdrop is-hidden" data-read-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-read-modal-close>
+      <svg class="modal__close-btn-icon" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__titel">How it’s made?</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/eeBZUUtkNBA"
+      title="YouTube video player"
+      style="border: 0px"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="read-more_video"
+    ></iframe>
+    <p class="read-more__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
+
+<!-- Modal Window - Locations -->
+<div class="backdrop is-hidden" data-locations-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-locations-modal-close>
+      <svg class="modal__close-btn-icon" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__titel">Our Locations</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26496.04989945715!2d-118.4186522!3d33.8894932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3fe34ddffcb%3A0xcf49b74fa1dc8fcb!2sWhole%20Foods%20Market!5e0!3m2!1sru!2sua!4v1662495328970!5m2!1sru!2sua"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="location-modal__map"
+    ></iframe>
+    <button type="button" class="modal-form__btn-submit">Open map</button>
+  </div>
+</div>
+
+<!-- Modal Window - Franchise -->
+<div class="backdrop is-hidden" data-franchise-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-franchise-modal-close>
+      <svg class="modal__close-btn-icon" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__titel modal__titel_franchise">
+      Thank you for your interest in owning an Ice Cream shop
+    </h3>
+    <p class="read-more__text franchise__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal-form">
+      <label class="modal-form__field">
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form__input"
+          required
+          pattern="[a-zA-Zа-яА-А]+"
+          minlength="2"
+          placeholder="Name"
+        />
+      </label>
+      <label class="modal-form__field">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-form__input"
+          required
+          pattern="[0-9]{3}-[0-9]{7}"
+          title="xxx-xxxxxxx"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="modal-form__field">
+        <input
+          type="email"
+          name="user_email"
+          class="modal-form__input"
+          placeholder="Email"
+        />
+      </label>
+      <label class="modal-form__field-desc">
+        <textarea
+          name="user_messag"
+          class="modal-form__message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-form__btn-submit">Submit</button>
+    </form>
+  </div>
+</div>

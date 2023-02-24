@@ -1,0 +1,237 @@
+.contacts {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    background-image: linear-gradient(
+        to top,
+        #84a178,
+        #84a178 78%,
+        rgba(0, 0, 255, 0) 78%
+      );
+      // url(../images/mobile/bg-ice-cream-mob-1.png);
+  }
+
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   .contacts {
+  //     background-image: linear-gradient(
+  //         to top,
+  //         #84a178,
+  //         #84a178 76%,
+  //         rgba(0, 0, 255, 0) 24%
+  //       ),
+  //       // url(../images/mobile/bg-ice-cream-mob-1@2x.png);
+  //   }
+  // }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(
+        to top,
+        #84a178,
+        #84a178 51.5%,
+        rgba(0, 0, 255, 0) 51.5%
+      );
+      // url(../images/tablet/bg-ice-cream-tablet.png);
+  }
+}
+
+// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 768px) and (min-resolution: 192dpi),
+//   screen and (min-width: 768px) and (min-resolution: 2dppx) {
+//   .contacts {
+//     background-image: linear-gradient(
+//         to top,
+//         #84a178,
+//         #84a178 51%,
+//         rgba(0, 0, 255, 0) 49%
+//       ),
+//       url(../images/tablet/bg-ice-cream-tablet@2x.png);
+//   }
+// }
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: linear-gradient(
+        to top,
+        #84a178,
+        #84a178 85%,
+        rgba(0, 0, 255, 0) 85%
+      );
+      // url(../images/desc/bg-ice-cream-desk.png);
+  }
+}
+
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 1200px) and (min-resolution: 192dpi),
+//   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+//   .contacts {
+//     background-image: linear-gradient(
+//         to top,
+//         #84a178,
+//         #84a178 86%,
+//         rgba(0, 0, 255, 0) 24%
+//       ),
+//       url(../images/desc/bg-ice-cream-desk@2x.png);
+//   }
+// }
+
+// .contacts {
+//   background-color: var(--orange);
+// }
+
+// .contacts-list__thumb {
+//   position: relative;
+//   top: -94px;
+//   margin-bottom: -94px;
+// }
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    padding: 40px 32px;
+    background-color: #fcfcfc;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
+
+  &__subunit {
+    display: flex;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    background-color: var(--first-yellow);
+    border-radius: 4px;
+  }
+
+  &__subunit-foodtruck {
+    width: 130px;
+  }
+
+  &__info {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-black);
+  }
+
+  &__text-time {
+    color: var(--grey);
+  }
+}
+
+.wrapper {
+  margin-bottom: 48px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: -24px;
+    background-color: #e1e1e1;
+  }
+}
+
+.contacts-list__link {
+  display: block;
+  color: var(--orange);
+  transition: text-decoration var(--transition-animation);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.contacts-info-list__link {
+  transition: text-decoration var(--transition-animation);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    &__item {
+      padding: 40px 40px 40px 24px;
+      flex-basis: calc((100% - 32px) / 3);
+    }
+
+    &__subunit {
+      margin-bottom: 32px;
+      width: 73px;
+      height: 28px;
+      @include font(16px, 500, 30px);
+      color: var(--primary-black);
+    }
+
+    &__subunit-foodtruck {
+      width: 138px;
+    }
+
+    &__text {
+      @include font(14px, 500, 26px);
+    }
+
+    &__info {
+      margin-bottom: 12px;
+    }
+  }
+
+  .wrapper {
+    margin-bottom: 64px;
+  }
+
+  .btn-wrapper {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    gap: 32px;
+
+    &__item {
+      padding: 40px;
+      flex-basis: calc((100% - 64px) / 3);
+    }
+
+    &__text {
+      @include font(16px, 500, 30px);
+    }
+  }
+}

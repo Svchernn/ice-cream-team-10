@@ -1,0 +1,199 @@
+.reviews {
+  // background-image: url(../images/mobile/bg-ice-cream-mob-1.png);
+  // margin-left: auto;
+  // margin-right: auto;
+  // background-position: center top;
+  // background-size: cover;
+  // background-repeat: repeat ;
+
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 20px 48px 20px;
+}
+
+.reviews__text-container {
+  background: var(--bg-color);
+  border-radius: 24px;
+  padding: 34px 39px;
+  margin-bottom: 30px;
+  min-height: 256px;
+}
+
+.reviews__gallery {
+  text-align: center;
+}
+
+.revievs__text {
+  @include font(12px, 400, 30.6px);
+  letter-spacing: 0.04em;
+  color: var(--primary-text-color);
+}
+
+.reviews__name {
+  @include font(20px, 500, 37.2px);
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//     .reviews {
+//     background-image:  url(../images/mobile/bg-ice-cream-mob-1@2x.png);
+//   }
+// }
+
+@media screen and (min-width: 379px) and  (max-width: 472px){
+  .reviews__text-container {
+    min-height: 190px;
+  }
+}
+@media screen and (min-width: 473px) and  (max-width: 768px){
+  .reviews__text-container {
+    min-height: 160px;
+  }
+}
+
+
+// BUTTONS STYLE
+#slick-slide-control01{
+  width: 12px;
+  height: 12px;
+}
+
+#slick-slide-control00{
+  width: 12px;
+  height: 12px;
+} 
+#slick-slide-control02{
+  width: 12px;
+  height: 12px;
+}
+#slick-slide-control03{
+  width: 12px;
+  height: 12px;
+}
+
+#slick-slide-control01::before {
+  content:'';
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+}
+
+#slick-slide-control00::before {
+  content:'';
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+}
+
+#slick-slide-control02::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-color);
+  border-radius: 50%; 
+}
+#slick-slide-control03::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-color);
+  border-radius: 50%; 
+}
+
+ul.slick-dots>li{
+  width: 12px;
+  height: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+ul.slick-dots>li:not(:last-child){
+  margin-right:18px;
+}
+// BUTTONS STYLE
+
+
+
+// PHOTO REVIEWS 
+.reviews__photo-container {
+  width: 85px;
+  height: 85px;
+  background: var(--reviews-photo-container);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 44px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.reviews__photo-reviewer {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.reviews__photo {
+  margin-bottom: 32px;
+}
+// PHOTO REVIEWS
+
+// TABLET STYLE
+
+@media screen and (min-width: 768px) {
+  .reviews__text-container {
+    padding: 29px 80px;
+    min-height: 138px;
+  }
+
+  .revievs__text {
+    @include font(14px, 500, 26px);
+  }
+
+  .reviews__name {
+    font-size: 16px;
+  }
+  .reviews {
+    // background-image: url(../images/tablet/bg-ice-cream-tablet.png);
+    padding: 60px 32px 80px 32px;
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//     .reviews {
+//     background-image: url(../images/tablet/bg-ice-cream-tablet@2x.png);
+   
+//   }
+// }
+// TABLET STYLE
+
+//  DESKTOP STYLE
+
+@media screen and (min-width: 1200px) {
+  .reviews__text-container {
+    padding: 39px 74px;
+  }
+  .reviews {
+    // background-image: url(../images/desc/bg-ice-cream-desk.png);
+    padding: 128px 116px 190px 116px;
+  }
+  .revievs__text {
+    font-size: 16px;
+  }
+}
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//     .reviews {
+//     background-image: url(../images/desc/bg-ice-cream-desk@2x.png);
+   
+//   }
+// }
+//  DESKTOP STYLE

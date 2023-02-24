@@ -1,0 +1,193 @@
+.modal {
+  position: absolute;
+  padding: 28px;
+  width: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 2px solid var(--first-yellow);
+  border-radius: 10px;
+  color: var(--secondary-black);
+  text-align: center;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.modal__close-btn-icon {
+  transition: fill var(--transition-animation);
+
+  .modal__close-btn:hover &,
+  .modal__close-btn:focus & {
+    fill: var(--first-green);
+  }
+}
+
+.modal__titel {
+  font-family: 'Seymour One', sans-serif;
+  @include font(16px, 400, 24px);
+  padding-bottom: 20px;
+}
+
+.buy-now-card {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.buy-now-card__item {
+  display: inline-block;
+  position: relative;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.buy-now-card__item:last-child {
+  margin-bottom: 0;
+}
+
+.buy-now-card__box-foto {
+  position: relative;
+  z-index: 1;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+}
+
+.buy-now-card__foto {
+  width: 131px;
+  height: 131px;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+}
+
+.buy-now-card__box-titel {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 131px;
+  height: 135px;
+  border-radius: 16px;
+  padding-top: 95px;
+}
+
+.buy-now-card__titel {
+  @include font(16px, 700, 20px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary-black);
+}
+
+.buy-now-card__box-foto_green {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.buy-now-card__box-titel_green {
+  border: 2px solid #96af8c;
+}
+
+.buy-now-card__box-foto_yellow {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.buy-now-card__box-titel_yellow {
+  border: 2px solid #efd478;
+  background-color: #efd478;
+}
+
+.buy-now-card__box-foto_brown {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-now-card__box-titel_brown {
+  border: 2px solid #d6936d;
+}
+
+.read-more__text {
+  @include font(14px, 400, 20px);
+  text-align: left;
+}
+
+.read-more_video,
+.location-modal__map {
+  width: 224px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.read-more__text {
+  @include font(14px, 400, 20px);
+}
+
+.franchise__text {
+  margin-bottom: 24px;
+}
+
+.modal__titel_franchise {
+    width: 223px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  .modal__titel {
+    @include font(20px, 400, 28px);
+    padding-bottom: 40px;
+  }
+
+  .buy-now-card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buy-now-card__item {
+    margin-bottom: 0;
+  }
+
+  .buy-now-card {
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+
+  .read-more__text {
+    @include font(16px, 400, 22px);
+  }
+
+  .read-more_video,
+  .location-modal__map {
+    width: 448px;
+    height: 205px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+  }
+
+  .read-more__text {
+    @include font(16px, 400, 22px);
+  }
+
+  .franchise__text {
+    margin-bottom: 32px;
+  }
+
+  .modal__titel_franchise {
+    width: 322px;  
+  }
+}

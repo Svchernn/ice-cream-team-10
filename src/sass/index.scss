@@ -1,0 +1,25 @@
+@import './common';
+@import './base/base';
+@import './base/container';
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './components/modal-btn';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/header-hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery-reviews-contacts';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/reviews-gallery';
+@import './layout/hero';
+
+@import './components/mobile-menu';

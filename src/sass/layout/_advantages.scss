@@ -1,0 +1,207 @@
+.advantages {
+    background-color: var(--bg-color);
+
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 53px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 44.5px;
+        padding-bottom: 86px;
+    }
+
+    &__title {
+        display: none;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 28px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+
+
+    &__item {
+
+
+        @media screen and (max-width: 767px) {
+            min-width: 230px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 152px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 368px;
+        }
+    }
+
+
+    &__circle {
+        position: relative;
+        margin-bottom: 16px;
+
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: var(--first-yellow);
+        border-radius: 25px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 40px;
+        }
+    }
+
+
+    &__circle.cow-icon::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        border-radius: 25px;
+        background-image: url('../images/cow 1.png');
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/cow 1-2x.png');
+            background-size: 100%;
+        }
+    }
+
+
+    &__circle.weight-icon::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        border-radius: 25px;
+        background-image: url('../images/weight-1.png');
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/weight-1-2x.png');
+            background-size: 100%;
+        }
+    }
+
+
+    &__circle.ice-cream-icon::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/ice-cream-1.png');
+        border-radius: 25px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/ice-cream-1-2x.png');
+            background-size: 100%;
+        }
+    }
+
+
+    &__subtitle {
+        margin-bottom: 18px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: var(--primary-text-color);
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+
+            font-size: 48px;
+            line-height: 1.22;
+
+            text-transform: lowercase;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 58px;
+        }
+    }
+
+
+    &__text {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.66;
+        word-wrap: break-word;
+
+        text-align: center;
+
+        color: #FCFCFC;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: var(--primary-font-size);
+            line-height: 1.75;
+            letter-spacing: 0.02em;
+        }
+    }
+}

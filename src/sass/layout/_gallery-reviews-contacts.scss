@@ -1,0 +1,43 @@
+.gallery-contacts {
+    background-image: url(../images/mobile/bg-mobile4@1x.png);
+    background-position: center top;
+    background-size: contain ;
+    background-repeat: no-repeat;  
+}
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .gallery-contacts {
+      background-image: url(../images/mobile/bg-mobile4@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .gallery-contacts {
+      background-image: url(../images/tablet/bg-tablet2@1x.png);
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        .gallery-contacts {
+      background-image:  url(../images/tablet/bg-tablet2@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .gallery-contacts {
+      background-image: url(../images/desc/bg-desctop2@1x.png);
+    
+    }
+  }
+  
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .gallery-contacts {
+      background-image: url(../images/desc/bg-desctop2@2x.png);
+    }
+  }

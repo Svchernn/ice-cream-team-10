@@ -1,0 +1,354 @@
+.hero {
+  background-color: var(--bg-color);
+  z-index: 3;
+  position: relative;
+}
+
+.hero-container {
+  z-index: 3;
+  padding-top: 110px;
+  padding-bottom: 239px;
+  position: relative;
+}
+
+.hero-smile-1,
+.hero-smile-2,
+.hero-smile-3,
+.image-plate,
+.hero-points,
+.hero-ice-cream {
+  position: absolute;
+}
+.hero-image {
+  width: 157px;
+  height: 207px;
+}
+
+.hero-box {
+  max-width: 247px;
+  margin-bottom: 32px;
+}
+
+.hero-name {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-name-passion {
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 96.5%;
+}
+
+.btn-products.hero-link {
+  text-decoration: none;
+  color: var(--secondary-black);
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero-link-list {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-link-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .image-plate,
+  .hero-number-list,
+  .hero-info,
+  .hero-arrow {
+    display: none;
+  }
+
+  .hero-points {
+    left: 0;
+    bottom: 0;
+  }
+
+  .hero-ice-cream {
+    width: 170px;
+    height: 219px;
+
+    left: 80px;
+    bottom: 0;
+
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
+  }
+  .hero-smile-1 {
+    width: 70px;
+    height: auto;
+    left: 107px;
+    bottom: 100px;
+  }
+  .hero-smile-2 {
+    width: 90px;
+    height: auto;
+    left: 153px;
+    bottom: 130px;
+  }
+  .hero-smile-3 {
+    width: 95px;
+    height: auto;
+    left: 160px;
+    bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+
+  .hero-image,
+  .hero-points,
+  .hero-smile-1,
+  .hero-smile-2,
+  .hero-smile-3,
+  .image-plate,
+  .ice-pie {
+    position: absolute;
+  }
+
+  .hero-image {
+    width: 270px;
+    height: 343px;
+  }
+
+  .hero-box {
+    max-width: 181px;
+    margin-bottom: 20px;
+  }
+
+  .hero-name {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .hero-name-passion {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+  .hero-number-list {
+    display: block;
+    position: absolute;
+    top: 94px;
+    right: 38px;
+  }
+
+  .hero-number__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .hero-number__item {
+    text-align: right;
+    position: relative;
+  }
+
+  .hero-number__info {
+    font-family: var(--primary-font);
+    font-size: 8px;
+    line-height: 1.25;
+    color: white;
+
+    text-transform: lowercase;
+    text-align: right;
+
+    font-weight: 400;
+  }
+
+  .hero-number__number {
+    font-family: var(--primary-font);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--secondary-black);
+    display: block;
+  }
+
+  .hero-link-list {
+    margin-bottom: 56px;
+  }
+
+  .hero-info {
+    max-width: 151px;
+
+    color: #ffffff;
+    margin-left: 185px;
+    margin-bottom: 20px;
+    font-size: 12px;
+
+    line-height: 140%;
+  }
+
+  .hero-arrow {
+    width: 40px;
+    height: 16;
+    fill: var(--primary-text-color);
+
+    flex-direction: column;
+    margin-left: 184px;
+  }
+
+  .image-plate {
+    width: 152px;
+    height: 152px;
+    left: 0;
+    bottom: 5%;
+  }
+  .hero-points {
+    width: 767px;
+    height: 67px;
+    right: 5%;
+    bottom: 0;
+  }
+
+  .hero-ice-cream {
+    width: 270px;
+    height: 343px;
+    right: 15%;
+    bottom: 0;
+
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
+  }
+  .hero-smile-1 {
+    width: 110px;
+    height: auto;
+    right: 30%;
+    bottom: 37%;
+  }
+  .hero-smile-2 {
+    width: 140px;
+    height: auto;
+    right: 17%;
+    bottom: 48%;
+  }
+
+  .hero-smile-3 {
+    width: 145px;
+    height: auto;
+    right: 14%;
+    bottom: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 118px;
+    padding-bottom: 90px;
+  }
+
+  .hero-box {
+    max-width: 367px;
+    margin-bottom: 28px;
+  }
+
+  .hero-name {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .hero-name-passion {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .hero-number__info {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .hero-number__number {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.24;
+  }
+
+  .btn-products.hero-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+  .hero-link-list {
+    margin-bottom: 111px;
+  }
+
+  .hero-info {
+    max-width: 200px;
+    font-size: 14px;
+
+    margin-left: 256px;
+    margin-bottom: 32px;
+  }
+
+  .hero-arrow {
+    margin-left: 256px;
+  }
+
+  .image-plate {
+    width: 225;
+    height: 225;
+    left: 1%;
+    bottom: 13%;
+  }
+
+  .hero-points {
+    width: 1200px;
+    height: 384px;
+    z-index: -3;
+    left: 0;
+    bottom: 3%;
+  }
+
+  .hero-ice-cream {
+    width: 456px;
+    height: 561px;
+    right: 10%;
+    bottom: 0;
+
+    // filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
+  }
+  .hero-smile-1 {
+    width: 456px;
+    height: 561px;
+    right: 15%;
+    bottom: 0;
+  }
+
+  .hero-smile-1 {
+    width: 180px;
+    height: auto;
+    right: 27%;
+    bottom: 40%;
+  }
+
+  .hero-smile-2 {
+    width: 230px;
+    height: auto;
+    right: 12%;
+    bottom: 52%;
+  }
+
+  .hero-smile-3 {
+    width: 230px;
+    height: auto;
+    right: 9%;
+    bottom: 20%;
+  }
+}

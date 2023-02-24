@@ -1,0 +1,13 @@
+@mixin font($fs: 16px, $fw: 700, $lh: 24px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin abs-position($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

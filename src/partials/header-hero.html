@@ -1,0 +1,131 @@
+<header class="header">
+  <div class="header-container container">
+    <nav class="top-nav">
+      <a class="logo link logo-header" href=""
+        ><img src="./images/desc/desc-logo.png" alt="logo" loading= "lazy"
+      /></a>
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link link menu__link_current" href="./index.html">Home</a>
+        </li>
+        <!-- <li class="menu__item">
+          <a class="menu__link link .menu__link_current" href="">About us</a>
+        </li> -->
+        <li class="menu__item">
+          <a class="menu__link link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__buttons-container">
+      <button class="modal-btn hero-modal-btn mobile-hidden" type="button" data-buy-modal-open>
+        Buy now
+      </button>
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-menu-open__icon" width="20" height="12">
+          <use href="./images/icons.svg#burger-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- ========================================MOBILE-MENU=============================== -->
+<div class="mobile-menu" data-menu >
+  <div class="container mobile-menu__container">
+    <a class="logo link logo-header mobile-menu__logo" href=""
+      ><img src="./images/tablet/tab-logo.png" alt="logo" loading= "lazy"
+    /></a>
+    <button class="mobile-menu__close-btn" data-menu-close>
+      <svg class="mobile-menu__close-icon" width="14" height="14">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__list list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link mobile-menu__link_current" href="./index.html"
+          >Home</a
+        >
+      </li>
+      <!-- <li class="mobile-menu__item">
+        <a class="mobile-menu__link link" href="">About us</a>
+      </li> -->
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link js-anchor-scroll" href="#how-made">How it's made?</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link js-anchor-scroll-second" href="#products">Our products</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link js-anchor-scroll-third" href="#contacts">Contact</a>
+      </li>
+    </ul>
+    <button class="modal-btn mobile-menu-btn" type="button" data-buy-modal-menu-open>
+      Buy now
+    </button>
+  </div>
+</div>
+</header>
+<!--========================================== HERO====================================== -->
+<section class="hero section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-name-container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/desc/hero/desc-desc-points.png 1x, ./images/desc/hero/desc-desc-points-2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="./images/tablet/hero/tab-desc-points.png 1x, ./images/tablet/hero/tab-desc-points-2x.png 2x" type="image/png">
+            <source media="(max-width: 767px)" srcset="./images/mobile/hero/mob-points.png 1x, ./images/mobile/hero/mob-points-2x.png 2x" type="image/png">
+            <img class="hero-points" src="./images/desc/hero/desc-desc-points.png" alt="points" loading= "lazy">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/desc/hero/desc-ice-cream.png 1x, ./images/desc/hero/desc-ice-cream-2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="./images/tablet/hero/tab-ice-cream.png 1x, ./images/tablet/hero/tab-ice-cream-2x.png 2x" type="image/png">
+            <source media="(max-width: 767px)" srcset="./images/mobile/hero/mob-ice-cream.png 1x, ./images/mobile/hero/mob-ice-cream-2x.png 2x" type="image/png">
+            <img class="hero-ice-cream" src="./images/desc/hero/desc-ice-cream.png" alt="icecream" loading= "lazy" width="447" height="560">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/desc/hero/desc-smile-1.png 1x, ./images/desc/hero/desc-smile-1-2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="./images/tablet/hero/tab-smile-1.png 1x, ./images/tablet/hero/tab-smile-1-2x.png 2x" type="image/png">
+            <source media="(max-width: 767px)" srcset="./images/mobile/hero/mob-smile-1.png 1x, ./images/mobile/hero/mob-smile-1-2x.png 2x" type="image/png">
+            <img class="hero-smile-1" src="./images/desc/hero/desc-smile-1.png" alt="smile-1" loading= "lazy" width="147" height="123">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/desc/hero/desc-smile-2.png 1x, ./images/desc/hero/desc-smile-2-2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="./images/tablet/hero/tab-smile-2.png 1x, ./images/tablet/hero/tab-smile-2-2x.png 2x" type="image/png">
+            <source media="(max-width: 767px)" srcset="./images/mobile/hero/mob-smile-2.png 1x, ./images/mobile/hero/mob-smile-2-2x.png 2x" type="image/png">
+            <img class="hero-smile-2" src="./images/desc/hero/desc-smile-2.png" alt="smile-2" width="185" height="132">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/desc/hero/desc-smile-3.png 1x, ./images/desc/hero/desc-smile-3-2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="./images/tablet/hero/tab-smile-3.png 1x, ./images/tablet/hero/tab-smile-3-2x.png 2x" type="image/png">
+            <source media="(max-width: 767px)" srcset="./images/mobile/hero/mob-smile-3.png 1x, ./images/mobile/hero/mob-smile-3-2x.png 2x" type="image/png">
+            <img class="hero-smile-3" src="./images/desc/hero/desc-smile-3.png" alt="smile-3" loading= "lazy" width="187" height="139">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/desc/hero/desc-hero-plate.png 1x, ./images/desc/hero/desc-hero-plate-2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="./images/tablet/hero/tab-hero-plate.png 1x, ./images/tablet/hero/tab-hero-plate-2x.png 2x" type="image/png">
+            <img class="image-plate" src="./images/desc/hero/desc-hero-plate.png" alt="plate" loading= "lazy">
+          </picture>
+        <div class="hero-box">
+          <h1 class="hero-name">ice cream made with <span class="hero-name-passion">passion</span></h1>
+          <ul class="hero-number-list">
+            <li class="hero-number__item"><p class="hero-number__info"><span class="hero-number__number">16</span>cafes</p></li>
+            <li class="hero-number__item"><p class="hero-number__info"><span class="hero-number__number">23</span>food trucks</p></li>
+          </ul>
+        </div>
+        <ul class="hero-link-list">
+          <li class="hero-link-item"><a href="#products" class="btn-products hero-link link">Products</a></li>
+          <li class="hero-link-item"><a href="#how-made" class="btn-how link">How it is made?</a></li>
+        </ul>
+        <p class="hero-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="#about" class="hero-arrow"><svg class="hero-arrow-svg" width="40" height="16">
+          <use href="./images/icons.svg#icon-Arrow-hero"></use>
+        </svg></a>
+    </div>
+  </section>
